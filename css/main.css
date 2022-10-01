@@ -126,7 +126,7 @@ select {
   align-items: center;
   justify-content: space-evenly;
   padding: 0 50px;
-  background-image: url("../../images/office.jpg");
+  background-image: url("../images/office.jpg");
   /* fallback */
   background-size: cover;
 }
@@ -142,7 +142,7 @@ select {
 }
 
 .infoTitle {
-  color: #fff6e8;
+  color: white;
   font-size: 50px;
   margin-bottom: 5px;
   flex-shrink: 0;
@@ -156,7 +156,7 @@ select {
   margin-top: 25px;
   padding-top: 10px;
   border-top: 3px solid #05a591;
-  color: #fff6e8;
+  color: white;
   font-weight: 700;
 }
 
