@@ -111,13 +111,13 @@ select {
 }
 
 .header_item {
-  color: white;
+  color: #05a591;
   padding: 5px 10px;
 }
 
 .header_item:hover {
   cursor: pointer;
-  color: #05a591;
+  color: white;
 }
 
 .hero {
@@ -125,6 +125,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  overflow: hidden;
   padding: 0 50px;
   background-image: url("../images/office.jpg");
   /* fallback */
