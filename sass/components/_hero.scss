@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   padding: 0 50px;
   background-image: url("../../images/office.jpg"); /* fallback */
@@ -14,10 +14,9 @@
 
 .info {
   padding: 15px;
-  margin-left: 200px;
+  margin-right: 50px;
   flex-direction: column;
   align-items: center;
-;
   text-align: center;
   backdrop-filter: blur(5px);
   border-radius: 30px;
@@ -36,21 +35,83 @@
   margin-top: 25px;
   padding-top: 10px;
   border-top: 3px solid #05a591;
- 
+
   color: #fff6e8;
   font-weight: 700;
 }
 .hero_icon {
   position: absolute;
   left: 50%;
-  bottom: 15px;
+  bottom: 0px;
   rotate: (180deg);
-  fill: blue;
-  animation-name: hd;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite; 
+
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
 }
-@keyframes hd {
+
+.hero-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 600px;
+//   border: 1px solid #05a591;
+  border-radius: 5px;
+  backdrop-filter: blur(30px);
+  
+}
+.hero-form::before{
+    content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: scale(1) ease;
+  animation: pulse 3s infinite;
+  border-radius: 5px;
+}
+.hero-form:hover::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    
+}
+
+.hero-form:hover{
+    border: 1px solid #05a591;
+    
+}
+.hero_input {
+  color: #05a591;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+}
+.hero_input:focus {
+  color: #05a591;
+  border: 1px solid #05a591;
+}
+.hero_btn {
+  cursor: pointer;
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+  //   border: 1px solid black;
+  color: white;
+  background-color: #05a591;
+  font-weight: 600;
+}
+
+@keyframes jump {
   50% {
     transform: translateY(15px);
   }
@@ -58,3 +119,21 @@
     transform: translateY(0px);
   }
 }
+@keyframes pulse {
+    0% {
+      transform: scale(0.97);
+      box-shadow: 0 0 0 0  rgba(5, 165, 145, 1);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 3px  rgba(5, 165, 145, 1);
+      
+    }
+    
+    100% {
+      transform: scale(0.97);
+      box-shadow: 0 0 0 0  rgba(5, 165, 145, 1);
+    }
+  }
+
