@@ -1,53 +1,238 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 .container {
-  width: 820px;
+  min-width: 1200px;
+  overflow: hidden;
+  overflow-y: hidden;
+  /*для вертикального*/
+  overflow-x: hidden;
   margin-left: auto;
+  margin-right: auto;
+  font-family: Montserrat;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  overflow-y: hidden;
+  /*для вертикального*/
+  overflow-x: hidden;
+  width: 100%;
+  height: 65px;
+  background-color: #393738;
+  border-bottom: 1px solid black;
+  background: linear-gradient(to right, #2b292a, black);
+}
+
+.header-nav {
+  width: 1000px;
+  height: 65px;
+  align-items: center;
+  margin-left: 250px;
   margin-right: auto;
 }
 
-.hero {
-  height: 700px;
-  padding: 20px 0;
+.header_list {
+  width: 500px;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* box-shadow:   29px 0px 118px 29px rgba(0,212,255,1); */
-  background: linear-gradient(90deg, #ee7f7f 0%, rgba(229, 220, 49, 0.905) 35%, #00d4ff 100%);
+  justify-content: space-between;
 }
 
-.mainImg {
-  position: relative;
-  width: 500px;
-  border-radius: 50%;
-  margin-bottom: 100px;
+.header_item {
+  color: white;
+  padding: 5px 10px;
+}
+
+.header_item:hover {
+  border: 2px solid #05a591;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-image: url("../../images/office.jpg");
+  /* fallback */
+  background-size: cover;
 }
 
 .info {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 15px;
+  margin-left: 200px;
   flex-direction: column;
-  left: 50%;
-  top: 48%;
-  transform: translateX(-50%);
+  align-items: center;
   text-align: center;
-  box-shadow: inset 0px 0px 5px 0px #f6f6f3;
-  width: 500px;
-  height: 165px;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(5px);
   border-radius: 30px;
 }
 
 .infoTitle {
   color: #fff6e8;
-  font-size: 45px;
+  font-size: 50px;
   margin-bottom: 5px;
+  flex-shrink: 0;
 }
 
 .infoText {
-  font-size: 20px;
+  width: 325px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 3px solid #05a591;
   color: #fff6e8;
   font-weight: 700;
+}
+
+.hero_icon {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  rotate: 180deg;
+  fill: blue;
+  animation-name: hd;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes hd {
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.about {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 3px solid #00d4ff;
+  border-left: 3px solid #ee7f7f;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.about_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 150px;
+  border-right: 3px solid #00d4ff;
+  border-left: 3px solid #ee7f7f;
+  /* border-top:  2px solid rgb(238, 127, 127); */
+  border-radius: 40px;
+  margin-bottom: 30px;
+  background-color: #fbfbf0;
+}
+
+.about_item:nth-child(even):after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: -251px;
+  width: 250px;
+  height: 3px;
+  background-color: #00d4ff;
+}
+
+.about_item:nth-child(odd)::before {
+  border: none;
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: -222px;
+  width: 220px;
+  height: 3px;
+  background-color: #ee7f7f;
+}
+
+.aboout_text {
+  color: #924848;
+  font-size: 20px;
 }
 /*# sourceMappingURL=main.css.map */
