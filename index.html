@@ -55,7 +55,7 @@
         <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
         <p class="form_text">Бесплатно проконсультирую вас по вопросам рекламы вашего бизнеса</p>
         <input required placeholder="ИМЯ" class="form_input" type="text">
-        <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel">
+        <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel" pattern="+[0-9]{10}">
         <button class="form_btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
       </form>
     </section>
@@ -101,6 +101,7 @@
       </ul>
     </section>
     <footer class="footer">
+      <!-- div.top-side -->
       <div class="footer-wrap">
         <div class="footer-content">
           <div id="contacts" class="content_contacts">
@@ -111,6 +112,12 @@
                   <svg class="tel_icon" width="25" height="25">
                     <use href="./images/icons.svg#icon-tel"></use>
                   </svg> +380 93 039 15 18 </a>
+              </li>
+              <li class="contacts_item">
+                <a class="contacts_tel" href="tel:+380930391518">
+                  <svg class="tel_icon" width="25" height="25">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg> +353 85 288 4206 </a>
               </li>
               <li class="contacts_item">
                 <a class="contacts_mail" href="mailto:casa08880@gmail.com">
@@ -134,7 +141,7 @@
                   </svg>
                 </a>
               </li>
-              
+
               <li class="socials_item"><a class="socials_link" target="_blank"
                   href="https://www.facebook.com/profile.php?id=100022843242878">
                   <svg class="socials_icon" width="35" height="35">
@@ -144,13 +151,23 @@
               </li>
             </ul>
           </div>
-          <div class="content_questions_form">
-
-          </div>
-
+        </div>
+        <div class="questions-form_wrap">
+          <form class="questions-form" action="submit">
+            <h3 class="questions_title">ЕСТЬ ВОПРОСЫ? - ПИШИ!</h3>
+            <input required placeholder="ИМЯ" class="questions_input" type="text">
+            <input required placeholder="ТЕЛЕФОН" class="questions_input" type="tel" pattern="+[0-9]{10}">
+            
+              <textarea required placeholder="TEКСТ"  class="questions_input--text" cols="30" rows="10"></textarea>
+            <button class="questions_btn" type="submit">ОТПРАВИТЬ</button>
+          </form>
         </div>
       </div>
-      <div class="footer-bottom-side"></div>
+      <div class="footer-bottom-side">
+        <p class="bottom-side_text">This site made by</p>
+        <button class="bottom-side_button" href="">i</button>
+        <span class="bottom-side_span">2022</span>
+      </div>
     </footer>
   </div>
 </body>
