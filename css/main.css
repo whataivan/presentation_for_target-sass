@@ -376,6 +376,10 @@ select {
   font-size: 20px;
 }
 
+.footer {
+  box-shadow: 0px 5px 7px 7px #212020;
+}
+
 .footer-wrap {
   width: 100%;
   height: 600px;
@@ -403,7 +407,6 @@ select {
 .content_contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   justify-content: center;
 }
 
@@ -489,9 +492,10 @@ select {
 }
 
 .footer-bottom-side {
+  box-shadow: 0px 5px 7px 7px #212020;
   width: 100%;
   height: 50px;
-  background: linear-gradient(to left, #111111, #323030);
+  background: linear-gradient(to left, #575555, #323030);
   bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
