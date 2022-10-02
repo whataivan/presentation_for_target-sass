@@ -379,7 +379,7 @@ select {
 .footer-wrap {
   width: 100%;
   height: 600px;
-  background-image: linear-gradient(to left, rgba(67, 67, 70, 0.4), rgba(47, 48, 58, 0.6)), url(../images/footer2.jpg);
+  background-image: linear-gradient(to left, rgba(67, 67, 70, 0.4), rgba(47, 48, 58, 0.6)), url("../images/footer2.jpg");
   background-size: cover;
 }
 
