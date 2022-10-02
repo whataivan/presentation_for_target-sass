@@ -108,14 +108,15 @@
   padding: 10px;
   border-radius: 50%;
   border: 2px solid #05a591;
-  background-color: #393636;
+  
   transform: scale(1);
   transition: all 0.2s linear;
+  background-color: transparent;
 }
 .socials_link:hover {
   transform: scale(1.1);
   transition: all 0.2s linear;
-  background-color: transparent;
+  background-color: #393636;
 }
 .socials_icon {
   fill: #05a591;
@@ -166,9 +167,9 @@ width: 250px;
   background-color: transparent;
   backdrop-filter: blur(5px);
   border-radius: 15px;
-  border: 2px solid gray;
+  border: 2px solid #767676;
+  border-left: 2px solid black;
   border-top: 2px solid black;
-  border-bottom: 2px solid black;
 }
 .questions_input--text::placeholder{
     padding: 13% 0;
