@@ -30,6 +30,10 @@ dd {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;
@@ -115,7 +119,12 @@ select {
   padding: 5px 10px;
 }
 
-.header_item:hover {
+.nav_link {
+  color: #05a591;
+  text-decoration: none;
+}
+
+.nav_link:hover {
   cursor: pointer;
   color: white;
 }
@@ -169,6 +178,19 @@ select {
   animation-name: jump;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
+}
+
+.hero_link {
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+  z-index: 15;
 }
 
 .hero-form {

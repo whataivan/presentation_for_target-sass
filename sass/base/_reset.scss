@@ -28,7 +28,9 @@ dl,
 dd {
   margin: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 /* Выставляем основные настройки по-умолчанию для body */
 body {
   min-height: 100vh;

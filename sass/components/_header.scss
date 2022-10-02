@@ -30,7 +30,11 @@ justify-content: space-between;
     color:  #05a591 ;
     padding: 5px 10px;
 }
-.header_item:hover {
+.nav_link{
+  color:  #05a591 ;
+  text-decoration: none;
+}
+.nav_link:hover {
     cursor: pointer;
     color: white;
     
