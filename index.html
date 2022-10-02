@@ -1,84 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Таргетолог Александра Склярова</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Таргетолог Александра Склярова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <div class="container">
-      <header class="header">
-        <nav class="header-nav">
-          <ul class="nav_list">
-            <li class="nav_item">
-              <a class="nav_link" href="./index.html">ГЛАВНАЯ</a>
-              </li>
-            <li class="nav_item">
-              <a class="nav_link" href="">ОТЗЫВЫ</a> </li>
-            <li class="nav_item">
-              <a class="nav_link" href="">КОНТАКТЫ</a>
-             </li>
-          </ul>
-        </nav>
-        <a class="header_tel"  href="tel:+380930391518">
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a class="nav_link" href="./index.html">ГЛАВНАЯ</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="">ОТЗЫВЫ</a>
+          </li>
+          <li class="nav_item">
+            <a class="nav_link" href="#contacts">КОНТАКТЫ</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header_tel" href="tel:+380930391518">
         <svg class="tel_icon" width="25" height="25">
           <use href="./images/icons.svg#icon-tel"></use>
         </svg> +380 93 039 15 18 </a>
-      </header>
-      <section class="hero">
-        <a class="hero_link" href="#about"></a>
-        <svg class="hero_icon" width="50" height="50">
-          <use href="./images/icons.svg#icon-arrow">
-            
-          </use>
-        </svg>
+    </header>
+    <section class="hero">
+      <a class="hero_link" href="#about"></a>
+      <svg class="hero_icon" width="50" height="50">
+        <use href="./images/icons.svg#icon-arrow">
+
+        </use>
+      </svg>
       </a>
-        <div class="hero-info">
-          <h1 class="info_title">Александра Склярова</h1>
-          <p class="info_text">таргетолог</p>
+      <div class="hero-info">
+        <h1 class="info_title">Александра Склярова</h1>
+        <p class="info_text">таргетолог</p>
+      </div>
+      <form class="hero-form" action="submit">
+        <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
+        <p class="form_text">Бесплатно проконсультирую вас по вопросам рекламы вашего бизнеса</p>
+        <input required placeholder="ИМЯ" class="form_input" type="text">
+        <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel">
+        <button class="form_btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+      </form>
+    </section>
+    <section id="about" class="about">
+
+      <ul class="aboout_list">
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+        <li class="about_item">
+          <p class="about_text">{text}</p>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-content">
+          <div id="contacts" class="content_contacts">
+            <h3 class="contacts_title">Мои контакты</h3>
+            <ul class="contacts_list">
+              <li class="contacts_item">
+                <a class="contacts_tel" href="tel:+380930391518">
+                  <svg class="tel_icon" width="25" height="25">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg> +380 93 039 15 18 </a>
+              </li>
+              <li class="contacts_item">
+                <a class="contacts_mail" href="mailto:casa08880@gmail.com">
+                  <svg class="mail_icon" fill="#05a591" width="27" height="27">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>casa08880@gmail.com</a>
+              </li>
+            </ul>
+            <ul class="socials_list">
+              <li class="socials_item">
+                <a target="_blank" class="socials_link" href="https://t.me/SashaSDigital">
+                  <svg class="socials_icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials_item"><a class="socials_link" target="_blank"
+                  href="https://www.instagram.com/sasha_skljarova/">
+                  <svg class="socials_icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials_item"><a class="socials_link" target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100022843242878">
+                  <svg class="socials_icon" width="35" height="35">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="content_questions_form">
+
+          </div>
+
         </div>
-        <form class="hero-form" action="submit">
-          <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
-          <p class="form_text">Бесплатно проконсультирую вас по вопросам рекламы вашего бизнеса</p>
-            <input required placeholder="ИМЯ" class="form_input" type="text">
-            <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel">
-            <button  class="form_btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
-        </form>
-      </section>
-      <section id="about" class="about">
-        
-        <ul class="aboout_list">
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-          <li class="about_item"><p class="about_text">{text}</p></li>
-        </ul>
-      </section>
-    </div>
-  </body>
+      </div>
+      <div class="footer-bottom-side"></div>
+    </footer>
+  </div>
+</body>
+
 </html>
