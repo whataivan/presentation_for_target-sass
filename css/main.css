@@ -87,34 +87,33 @@ select {
   position: fixed;
   top: 0;
   z-index: 100;
-  overflow: hidden;
-  overflow-y: hidden;
-  /*для вертикального*/
-  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 65px;
   background-color: #393738;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #05a591;
   background: linear-gradient(to right, #2b292a, black);
 }
 
 .header-nav {
-  width: 1000px;
+  width: 600px;
   height: 65px;
   align-items: center;
   margin-left: 250px;
-  margin-right: auto;
 }
 
-.header_list {
+.nav_list {
   width: 500px;
   height: 100%;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 }
 
-.header_item {
+.nav_item {
   color: #05a591;
   padding: 5px 10px;
 }
@@ -122,11 +121,29 @@ select {
 .nav_link {
   color: #05a591;
   text-decoration: none;
+  transition: color 0.3s linear;
 }
 
 .nav_link:hover {
   cursor: pointer;
   color: white;
+}
+
+.header_tel {
+  margin-right: 25px;
+  width: 200px;
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+.tel_icon {
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  fill: #05a591;
 }
 
 .hero {
@@ -141,7 +158,7 @@ select {
   background-size: cover;
 }
 
-.info {
+.hero-info {
   padding: 15px;
   margin-right: 50px;
   flex-direction: column;
@@ -151,14 +168,14 @@ select {
   border-radius: 30px;
 }
 
-.infoTitle {
+.info_title {
   color: white;
   font-size: 50px;
   margin-bottom: 5px;
   flex-shrink: 0;
 }
 
-.infoText {
+.info_text {
   width: 325px;
   margin-left: auto;
   margin-right: auto;
@@ -200,7 +217,8 @@ select {
   align-items: center;
   justify-content: center;
   width: 400px;
-  height: 600px;
+  height: 500px;
+  padding: 20px;
   border-radius: 5px;
   backdrop-filter: blur(30px);
 }
@@ -213,6 +231,7 @@ select {
   right: 0;
   left: 0;
   transform: scale(1) ease;
+  animation-delay: 0.5s;
   animation: pulse 3s infinite;
   border-radius: 5px;
 }
@@ -227,28 +246,52 @@ select {
 }
 
 .hero-form:hover {
-  border: 1px solid #05a591;
+  border: 2px solid #05a591;
 }
 
-.hero_input {
+.form_title {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.form_text {
+  text-align: center;
+  border-top: 1px solid #05a591;
+  color: #05a591;
+  padding-top: 10px;
+  width: 300px;
+  margin-bottom: 75px;
+}
+
+.form_input {
+  background-color: #353030;
+  border: 2px solid #05a591;
+  border-bottom: 1px solid #05a591;
+  width: 250px;
+  height: 35px;
   color: #05a591;
   font-size: 15px;
   margin-bottom: 30px;
   text-align: center;
   background-color: transparent;
-  backdrop-filter: blur(15px);
+  border-radius: 15px;
 }
 
-.hero_input:focus {
+.form_input:nth-last-child(2) {
+  margin-bottom: 75px;
+}
+
+.form_input:focus {
   color: #05a591;
   border: 1px solid #05a591;
 }
 
-.hero_btn {
+.form_btn {
   cursor: pointer;
-  width: 250px;
-  height: 35px;
-  border-radius: 20px;
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  margin-bottom: 10px;
   color: white;
   background-color: #05a591;
   font-weight: 600;
@@ -265,7 +308,7 @@ select {
 
 @keyframes pulse {
   0% {
-    transform: scale(0.97);
+    transform: scale(0.98);
     box-shadow: 0 0 0 0 #05a591;
   }
   70% {
@@ -273,7 +316,7 @@ select {
     box-shadow: 0 0 0 3px #05a591;
   }
   100% {
-    transform: scale(0.97);
+    transform: scale(0.99);
     box-shadow: 0 0 0 0 #05a591;
   }
 }

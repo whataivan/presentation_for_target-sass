@@ -2,30 +2,31 @@
   position: fixed;
   top: 0;
   z-index: 100;
-  overflow: hidden;
-  overflow-y: hidden; /*для вертикального*/
-  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 65px;
   background-color: #393738;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #05a591;
   background: linear-gradient(to right, #2b292a, black);
 }
 .header-nav {
-    width: 1000px;
+    width: 600px;
     height: 65px;
     align-items: center;
   margin-left: 250px;
-  margin-right: auto;
+  // margin-right: 300px;
 }
-.header_list {
+.nav_list {
     width: 500px;
     height: 100%;
 display: flex;
 align-items: center;
+flex-direction: row;
 justify-content: space-between;
 }
-.header_item {
+.nav_item {
     
     color:  #05a591 ;
     padding: 5px 10px;
@@ -33,10 +34,28 @@ justify-content: space-between;
 .nav_link{
   color:  #05a591 ;
   text-decoration: none;
+  transition: color 0.3s linear;
 }
 .nav_link:hover {
     cursor: pointer;
     color: white;
     
     
+}
+.header_tel{
+  margin-right: 25px;
+  // margin-left: auto;
+  width: 200px;
+  position: relative;
+  font-size: 20px;
+text-decoration: none;
+color: white;
+text-align:  center;
+
+}
+.tel_icon{
+  position: absolute;
+  top: 3px;
+  left: -20px;
+  fill: #05a591;
 }

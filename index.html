@@ -26,17 +26,21 @@
     <div class="container">
       <header class="header">
         <nav class="header-nav">
-          <ul class="header_list">
-            <li class="header_item">
+          <ul class="nav_list">
+            <li class="nav_item">
               <a class="nav_link" href="./index.html">ГЛАВНАЯ</a>
               </li>
-            <li class="header_item">
+            <li class="nav_item">
               <a class="nav_link" href="">ОТЗЫВЫ</a> </li>
-            <li class="header_item">
+            <li class="nav_item">
               <a class="nav_link" href="">КОНТАКТЫ</a>
              </li>
           </ul>
         </nav>
+        <a class="header_tel"  href="tel:+380930391518">
+        <svg class="tel_icon" width="25" height="25">
+          <use href="./images/icons.svg#icon-tel"></use>
+        </svg> +380 93 039 15 18 </a>
       </header>
       <section class="hero">
         <a class="hero_link" href="#about"></a>
@@ -46,14 +50,16 @@
           </use>
         </svg>
       </a>
-        <div class="info">
-          <h1 class="infoTitle">Александра Склярова</h1>
-          <p class="infoText">таргетолог</p>
+        <div class="hero-info">
+          <h1 class="info_title">Александра Склярова</h1>
+          <p class="info_text">таргетолог</p>
         </div>
         <form class="hero-form" action="submit">
-            <input required placeholder="ИМЯ" class="hero_input" type="text">
-            <input required placeholder="ТЕЛЕФОН" class="hero_input" type="tel">
-            <button  class="hero_btn" type="submit">ОТПРАВИТЬ</button>
+          <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
+          <p class="form_text">Бесплатно проконсультирую вас по вопросам рекламы вашего бизнеса</p>
+            <input required placeholder="ИМЯ" class="form_input" type="text">
+            <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel">
+            <button  class="form_btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
         </form>
       </section>
       <section id="about" class="about">
