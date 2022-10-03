@@ -222,6 +222,7 @@ select {
   border-radius: 5px;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  z-index: 1;
 }
 
 .hero-form::after {
@@ -231,6 +232,7 @@ select {
   height: 100%;
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
+  z-index: 0;
 }
 
 .hero-form::before {
