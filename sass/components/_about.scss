@@ -47,7 +47,7 @@
   font-size: 40px;
   margin-bottom: 120px;
   padding: 10px 20px;
- 
+  
   animation-name: blur;
   
   animation-duration: 8s;
@@ -71,7 +71,7 @@
   height: 150px;
   box-shadow: 0 0 5px 2px #4d2d2d;
 backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(1px);
   border: 1px solid #665252;
   transition: all 0.5s linear ;
 }
@@ -98,10 +98,7 @@ box-shadow: 0 0 5px 2px #dfd5d5;
 0%, 100%{
   box-shadow: 0 0 5px 2px #4d2d2d;
   }
-33% {
+50% {
   box-shadow: 0 0 5px 2px #fffdfd;
-}
-66% {
-  box-shadow: 0 0 5px 2px #05a591;
 }
 }
