@@ -45,14 +45,17 @@ justify-content: space-between;
 }
 .header_tel{
   margin-right: 25px;
-  // margin-left: auto;
   width: 200px;
   position: relative;
   font-size: 20px;
 text-decoration: none;
 color: white;
 text-align:  center;
+transition: all 0.3s linear;
 
+}
+.header_tel:hover{
+  color: #05a591 ;
 }
 .tel_icon{
   position: absolute;
