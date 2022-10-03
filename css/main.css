@@ -221,6 +221,7 @@ select {
   padding: 20px;
   border-radius: 5px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 
 .hero-form::before {
@@ -388,6 +389,7 @@ select {
   height: 150px;
   box-shadow: 0 0 5px 2px #4d2d2d;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border: 1px solid #665252;
   transition: all 0.5s linear;
 }
@@ -592,6 +594,7 @@ select {
   text-align: center;
   background-color: transparent;
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 2px solid #fcfcfc;
 }

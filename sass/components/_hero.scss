@@ -79,6 +79,7 @@ height: 50px;
 padding: 20px;
   border-radius: 5px;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   
 }
 .hero-form::before{
