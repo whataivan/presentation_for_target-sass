@@ -468,7 +468,7 @@ select {
 }
 
 .cooperation_item:nth-child(even) {
-  margin-left: 624px;
+  margin-left: 625px;
   position: relative;
   background-size: cover;
 }
