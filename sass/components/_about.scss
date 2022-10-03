@@ -46,9 +46,13 @@
   color: white;
   font-size: 40px;
   margin-bottom: 120px;
-  padding: 0 10px;
+  padding: 10px 20px;
   // border-bottom: 3px solid white;
-  box-shadow: 0 0 10px 5px rgb(81, 55, 55);
+  // box-shadow: 0 0 10px 5px rgb(81, 55, 55);
+  animation-name: blur;
+  // animation-delay: 1s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .aboout_list {
@@ -91,13 +95,10 @@ box-shadow: 0 0 5px 2px #dfd5d5;
   text-align: center;
 }
 @keyframes blur {
-0%{
-    background: linear-gradient(to right, #c2c6bc, aliceblue);
+0%, 100%{
+  box-shadow: 0 0 5px 2px #4d2d2d;
   }
 50% {
-  background: linear-gradient(to right, #49abd5, rgb(52, 162, 105));
-}
-100% {
-  background: linear-gradient(to right, #c2c6bc, aliceblue);
+  box-shadow: 0 0 5px 2px #fffdfd;
 }
 }

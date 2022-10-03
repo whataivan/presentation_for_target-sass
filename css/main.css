@@ -365,8 +365,10 @@ select {
   color: white;
   font-size: 40px;
   margin-bottom: 120px;
-  padding: 0 10px;
-  box-shadow: 0 0 10px 5px #513737;
+  padding: 10px 20px;
+  animation-name: blur;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
 }
 
 .aboout_list {
@@ -411,14 +413,11 @@ select {
 }
 
 @keyframes blur {
-  0% {
-    background: linear-gradient(to right, #c2c6bc, aliceblue);
+  0%, 100% {
+    box-shadow: 0 0 5px 2px #4d2d2d;
   }
   50% {
-    background: linear-gradient(to right, #49abd5, #34a269);
-  }
-  100% {
-    background: linear-gradient(to right, #c2c6bc, aliceblue);
+    box-shadow: 0 0 5px 2px #fffdfd;
   }
 }
 
@@ -581,6 +580,7 @@ select {
   background-color: transparent;
   backdrop-filter: blur(5px);
   border-radius: 15px;
+  border: 2px solid #fcfcfc;
 }
 
 .questions_input--text {
@@ -593,9 +593,7 @@ select {
   background-color: transparent;
   backdrop-filter: blur(5px);
   border-radius: 15px;
-  border: 2px solid #767676;
-  border-left: 2px solid black;
-  border-top: 2px solid black;
+  border: 2px solid #fcfcfc;
 }
 
 .questions_input--text::placeholder {
