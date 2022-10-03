@@ -399,6 +399,7 @@ select {
   -webkit-backdrop-filter: blur(15px);
   border: 1px solid #665252;
   transition: all 0.5s linear;
+  z-index: 25;
 }
 
 .about_item:hover {
@@ -444,7 +445,7 @@ select {
   font-size: 40px;
   color: white;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .cooperation_list {
