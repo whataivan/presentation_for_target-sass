@@ -82,6 +82,14 @@ padding: 20px;
   -webkit-backdrop-filter: blur(30px);
   
 }
+.hero-form::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+}
 .hero-form::before{
     content: "";
   position: absolute;
