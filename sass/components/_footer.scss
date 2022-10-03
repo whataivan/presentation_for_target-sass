@@ -145,17 +145,14 @@ padding: 0 85px;
   margin-bottom: 25px;
 }
 .questions_input{
-  width: 250px;
-  height: 100px;
+    width: 250px;
+  height: 40px;
   color: #05a591;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   text-align: center;
-  
   background-color: transparent;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 2px solid rgb(252, 252, 252);
 }
@@ -170,7 +167,6 @@ width: 250px;
   
   background-color: transparent;
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 2px solid rgb(252, 252, 252);
 }
