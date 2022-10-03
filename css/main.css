@@ -449,8 +449,8 @@ select {
 }
 
 .cooperation_list {
-  border-right: 2px solid #23321a;
-  border-left: 2px solid #23321a;
+  border-right: 2px solid #2a421c;
+  border-left: 2px solid #2a421c;
   height: 1025px;
 }
 
@@ -476,14 +476,14 @@ select {
 }
 
 .cooperation_item:nth-child(even)::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: -155px;
   width: 150px;
   height: 150px;
   background-color: #04403c;
-  border-radius: 15px 0  0 15px;
+  border-radius: 15px 0 0 15px;
 }
 
 .cooperation_item:nth-child(odd) {
@@ -492,7 +492,7 @@ select {
 }
 
 .cooperation_item:nth-child(odd)::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: -155px;
@@ -500,6 +500,31 @@ select {
   height: 150px;
   background-color: #04403c;
   border-radius: 0 15px 15px 0;
+}
+
+.cooperation_icon--even {
+  fill: #9bc6aa;
+  position: absolute;
+  top: 29%;
+  right: -112px;
+  animation-name: color_switch;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.cooperation_icon--even:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.cooperation_icon--odd {
+  fill: #9bc6aa;
+  position: absolute;
+  top: 29%;
+  left: -112px;
+  animation-name: color_switch;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 .cooperation_text {
@@ -513,6 +538,19 @@ select {
   text-align: center;
   font-size: 17px;
   font-weight: 700;
+}
+
+@keyframes color_switch {
+  0%,
+  100% {
+    fill: #9bc6aa;
+  }
+  33% {
+    fill: #d76397;
+  }
+  66% {
+    fill: #2b86c5;
+  }
 }
 
 .footer {
