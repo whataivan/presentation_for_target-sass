@@ -156,6 +156,10 @@ padding: 0 85px;
           backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 2px solid #05a591;
+  animation-name: border;
+  
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .questions_input--text{
     
@@ -171,6 +175,10 @@ padding: 0 85px;
           backdrop-filter: blur(5px);
   border-radius: 15px;
   border: 2px solid #05a591;
+  animation-name: border;
+  
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .questions_input--text::placeholder{
     padding: 13% 0;
@@ -202,7 +210,7 @@ padding: 0 85px;
   margin-right: 5px;
 }
 .bottom-side_button {
-  font-size: 11px;
+  font-size: 9px;
 
   width: 18px;
   height: 18px;
@@ -233,4 +241,15 @@ padding: 0 85px;
   100% {
     transform: translateY(0px);
   }
+}
+@keyframes border {
+  0%{
+    border: 2px solid #05a591;
+  }
+50% {
+  border: 2px solid #ffffff;
+}
+100% {
+  border: 2px solid #05a591;
+}
 }
