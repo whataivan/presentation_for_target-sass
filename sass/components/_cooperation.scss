@@ -11,6 +11,7 @@
     #05a591 50%,
     #2b86c5 100%
   );
+  
 }
 .cooperation-title {
   font-size: 40px;
@@ -19,12 +20,11 @@
   margin-bottom: 100px;
 }
 .cooperation_list {
-  border-right: 2px solid #2a421c;
-  border-left: 2px solid #2a421c;
+ 
   height: 1025px;
 }
 .cooperation_item {
-  margin-bottom: 25px;
+  margin-bottom: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +32,7 @@
   height: 150px;
   background-color: #04403c;
   background-size: cover;
-  box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+//   box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
   
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: 0;
 }
 .cooperation_item:nth-child(even) {
-  margin-left: 415px;
+  margin-left: 624px;
   position: relative;
 
   background-size: cover;
@@ -136,3 +136,31 @@
     fill: #2b86c5;
   }
 }
+// @keyframes gradient_switch {
+//     0%,
+//     100% {
+//         background: linear-gradient(
+//             225deg,
+//             #ff3cac 0%,
+//             #05a591 50%,
+//             #2b86c5 100%
+//           );
+      
+//     }
+//     33% {
+//         background: linear-gradient(
+//             225deg,
+//             #05a591 0%,
+//              #ff3cac 50%,
+//             #2b86c5 100%
+//           );
+//     }
+//     66% {
+//         background: linear-gradient(
+//             225deg,
+//              #2b86c5 0%,
+//             #05a591 50%,
+//             #ff3cac 100%
+//           );
+//     }
+//   }
