@@ -43,7 +43,8 @@
 .cooperation_item:nth-child(even) {
   margin-left: 625px;
   position: relative;
-
+  border-radius: 0 15px  15px 0;
+  
   background-size: cover;
 }
 .cooperation_item:nth-child(even)::before {
@@ -54,12 +55,13 @@
   width: 150px;
   height: 150px;
   background-color: #04403c;
-
   border-radius: 15px 0 0 15px;
+  
 }
 .cooperation_item:nth-child(odd) {
   position: relative;
   margin-right: 415px;
+  border-radius: 15px 0 0 15px;
 }
 .cooperation_item:nth-child(odd)::before {
   content: "";
@@ -69,7 +71,7 @@
   width: 150px;
   height: 150px;
   background-color: #04403c;
-
+//   border-radius: 15px 0 0 15px;
   border-radius: 0 15px 15px 0;
 }
 .cooperation_icon--even {
@@ -78,7 +80,7 @@
   top: 29%;
   right: -112px;
   animation-name: color_switch;
-  
+  border-radius: 15px 0 0 15px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }

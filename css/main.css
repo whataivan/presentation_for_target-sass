@@ -470,6 +470,7 @@ select {
 .cooperation_item:nth-child(even) {
   margin-left: 625px;
   position: relative;
+  border-radius: 0 15px  15px 0;
   background-size: cover;
 }
 
@@ -487,6 +488,7 @@ select {
 .cooperation_item:nth-child(odd) {
   position: relative;
   margin-right: 415px;
+  border-radius: 15px 0 0 15px;
 }
 
 .cooperation_item:nth-child(odd)::before {
@@ -506,6 +508,7 @@ select {
   top: 29%;
   right: -112px;
   animation-name: color_switch;
+  border-radius: 15px 0 0 15px;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
