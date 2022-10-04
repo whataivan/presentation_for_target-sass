@@ -809,6 +809,10 @@ select {
   cursor: pointer;
 }
 
+.bottom-side_button--open {
+  animation: none;
+}
+
 .bottom-side_span {
   color: #05a591;
 }
@@ -873,6 +877,9 @@ select {
   margin-bottom: 13px;
   margin-right: 17px;
   border-bottom: 1px solid #05a591;
+  animation-name: border2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
 .content_contacts {
@@ -965,5 +972,17 @@ select {
 
 .made-by_socials_icon {
   fill: #05a591;
+}
+
+@keyframes border2 {
+  0% {
+    border-bottom: 1px solid #05a591;
+  }
+  50% {
+    border-bottom: 1px solid white;
+  }
+  100% {
+    border-bottom: 1px solid #05a591;
+  }
 }
 /*# sourceMappingURL=main.css.map */

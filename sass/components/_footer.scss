@@ -239,6 +239,9 @@ width: 500px;
   animation-iteration-count: infinite;
   cursor: pointer;
 }
+.bottom-side_button--open {
+  animation: none;
+}
 .bottom-side_span {
   color: #05a591;
   
@@ -306,6 +309,10 @@ transition: all 0.3s linear;
   margin-bottom: 13px;
   margin-right: 17px;
   border-bottom: 1px solid #05a591;
+  animation-name: border2;
+  // animation-delay: 1s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 .content_contacts {
   display: flex;
@@ -391,8 +398,24 @@ transition: all 0.3s linear;
 .made-by_socials_link:hover {
   transform: scale(1.2);
   transition: all 0.2s linear;
+  
   // background-color: #393636;
 }
 .made-by_socials_icon {
   fill: #05a591;
+}
+
+@keyframes border2 {
+  0%{
+    
+    border-bottom: 1px solid #05a591;
+  }
+50% {
+  
+  border-bottom: 1px solid white;
+}
+100% {
+  
+  border-bottom: 1px solid #05a591;
+}
 }
