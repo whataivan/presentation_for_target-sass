@@ -954,16 +954,19 @@ select {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: 15px;
 }
 
 .made-by_socials_item {
-  width: 50px;
+  width: 30px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 25px;
+}
+
+.made-by_socials_item:last-child {
+  margin-right: 0;
 }
 
 .made-by_socials_link {
