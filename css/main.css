@@ -775,6 +775,17 @@ select {
   }
 }
 
+.reviews {
+  padding: 50px 0;
+  background: linear-gradient(90deg, #45dfd2 0%, #eeb8b8 100%);
+}
+
+.reviews-title {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
 .swiper {
   width: 100%;
   padding-top: 50px;
