@@ -546,7 +546,9 @@ select {
   }
   .about_item:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 5px 2px #dfd5d5;
+    animation-name: blur;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .about_text {
     color: whitesmoke;
@@ -626,7 +628,9 @@ select {
   }
   .about_item:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 5px 2px #dfd5d5;
+    animation-name: blur;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
   }
   .about_item:nth-child(3) {
     height: 200px;
