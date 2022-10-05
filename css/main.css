@@ -775,6 +775,34 @@ select {
   }
 }
 
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-button-next {
+  border: none;
+  background-color: transparent;
+}
+
+.swiper-button-prev {
+  border: none;
+  background-color: transparent;
+}
+
 .footer {
   width: 100vw;
   display: flex;
@@ -948,6 +976,7 @@ select {
 }
 
 .questions_input--text {
+  resize: vertical;
   width: 250px;
   height: 100px;
   color: #05a591;

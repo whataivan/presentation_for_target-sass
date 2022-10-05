@@ -1,0 +1,26 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 500px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-button-next{
+    border: none;
+    background-color: transparent;
+  }
+.swiper-button-prev{
+    border: none;
+    background-color: transparent;
+}
