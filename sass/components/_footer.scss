@@ -313,9 +313,12 @@ transition: all 0.3s linear;
   right: 0px;
   background-color: transparent;
   border: none;
-  color: #05a591;
+  color: white;
   cursor: pointer;
   
+}
+.made-by_close_btn:hover{
+  color: #05a591;
 }
 .made-by_title {
   font-size: 20px;
