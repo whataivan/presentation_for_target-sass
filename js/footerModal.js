@@ -1,6 +1,6 @@
 const toggleButton = document.querySelector('.bottom-side_button')
 const toggleContent = document.querySelector('.made-by')
-const closeBtn= document.querySelector('.made-by_close_btn')
+const closeBtn = document.querySelector('.made-by_close_btn')
 
 
 
@@ -16,7 +16,10 @@ toggleButton.addEventListener('click', () => {
 
     }
 })
-closeBtn.addEventListener('click', () => {toggleContent.classList.add('made-by_hidden') })
+closeBtn.addEventListener('click', () => {
+    toggleContent.classList.add('made-by_hidden')
+    toggleButton.classList.remove("bottom-side_button--open")
+})
 
 // window.addEventListener("click", () => {
 //     toggleContent.classList.add('made-by_hidden')
