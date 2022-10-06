@@ -69,6 +69,9 @@
   color: white;
   margin-bottom: 10px;
 }
+.contacts_tel:hover{
+  color: #05a591;
+}
 .contacts_mail {
   margin-left: 35px;
   width: 200px;
@@ -79,7 +82,9 @@
   text-align: center;
   margin-bottom: 25px;
 }
-
+.contacts_mail:hover{
+  color: #05a591;
+}
 .mail_icon {
   position: absolute;
   top: 3px;
