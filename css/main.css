@@ -852,6 +852,7 @@ select {
   background-size: cover;
   width: 350px;
   height: 700px;
+  margin: 0 42px;
 }
 
 .swiper-button-next {
