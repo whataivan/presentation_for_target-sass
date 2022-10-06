@@ -31,8 +31,21 @@ height: 700px;
     // border: 1px solid #05a591;
 }
 
-
-
+.order-input{
+    width: 225px;
+    // background-color: transparent;
+    border: 1px solid #05a591;
+    // box-shadow: inset 0px 0px 7px 0px #0e0101;
+text-align: center;
+color: #05a591;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    backdrop-filter: brightness(60%);
+}
+.order-input:focus{
+   
+}
 .order-img_secondary{
 // border-radius: 25px;
 // margin-left: auto;
