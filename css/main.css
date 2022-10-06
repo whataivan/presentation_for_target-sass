@@ -812,19 +812,42 @@ select {
   border: 1px solid #05a591;
   border-bottom: 1px solid black;
   text-align: center;
-  color: #05a591;
+  color: white;
   border: none;
   border: 1px solid transparent;
-  border-radius: 15px;
+  border-bottom: 1px solid #05a591;
   margin-bottom: 10px;
-  background-color: #444444;
+  background-color: transparent;
   backdrop-filter: brightness(50%);
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.order-input::placeholder {
+  color: #05a591;
 }
 
 .order-range {
   width: 225px;
   background-color: #05a591;
+}
+
+:focus::-webkit-input-placeholder {
+  display: none;
+  color: transparent;
+}
+
+.order-input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.order-btn {
+  width: 250px;
+  height: 35px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: #05a591;
+  border: none;
+  color: white;
 }
 
 .order-img_secondary {
