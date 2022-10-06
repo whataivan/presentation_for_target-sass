@@ -13,13 +13,13 @@ background-image: linear-gradient(
     ),
     url("https://cdn.pixabay.com/photo/2016/11/23/17/26/building-1853941_960_720.jpg");
 background-size: cover;
-overflow: visible;
+overflow: hidden;
 }
 
 .order-form{
-    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 width: 400px;
-height: 700px;
+height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,37 +28,65 @@ height: 700px;
     margin-left: auto;
     margin-right: auto;
     backdrop-filter: blur(20px);
-    // border: 1px solid #05a591;
+    animation-name: shadows;
+  
+    animation: 3s linear  infinite alternate shadows;
 }
 
 .order-input{
     width: 225px;
-    // background-color: transparent;
+    height: 35px;
     border: 1px solid #05a591;
-    // box-shadow: inset 0px 0px 7px 0px #0e0101;
+    border-bottom: 1px solid black;
 text-align: center;
 color: #05a591;
     border: none;
-    border-radius: 20px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    // border-bottom: 2px solid black;
+    // border-right: 2px solid black;
     margin-bottom: 10px;
-    backdrop-filter: brightness(60%);
+    background-color: #444444;
+    backdrop-filter: brightness(50%);
+    box-shadow:  0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+.order-range{
+   
+width: 225px;
+background-color: #05a591;
+
 }
 .order-input:focus{
    
 }
 .order-img_secondary{
-// border-radius: 25px;
-// margin-left: auto;
-box-shadow: -9px 0px 16px -3px rgba(0,0,0,0.75);
+
+box-shadow: -9px 0px 20px 5px rgba(0,0,0,0.75);
     height: 850px;
     width: 600px;
-    // box-shadow: 0 5px 5px #000000 ;
-    // opacity: 0.9;
+    
 }
-// .order-img_primary{
-//     margin-right: auto;
-//     box-shadow: -9px 0px 16px -3px rgba(0,0,0,0.75);
-//         height: 850px;
-//         width: 600px;
+.order-img_primary{
+    // display: none;
+    box-shadow: 9px 0px 20px 5px rgba(0,0,0,0.75);
+        height: 855px;
+        width: 200px;
 
-// }
+}
+@keyframes shadows {
+    0%{
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    }
+    25%{
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    }
+    50%{
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    }
+    75%{
+        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+    }
+    100%{
+        box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.75);
+    }
+}

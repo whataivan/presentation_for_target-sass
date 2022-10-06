@@ -51,11 +51,11 @@
         </use>
       </svg>
       </a>
-      <div class="hero-info" data-aos="fade-down">
+      <div class="hero-info" data-aos="fade-down" data-aos-delay="200">
         <h1 class="info_title">Александра Склярова</h1>
         <p class="info_text">таргетолог</p>
       </div>
-      <form class="hero-form" action="submit" data-aos="fade-down">
+      <form class="hero-form" action="submit" data-aos="fade-down" data-aos-delay="200">
         <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
         <p class="form_text">Бесплатно проконсультирую вас по вопросам рекламы вашего бизнеса</p>
         <input required placeholder="ИМЯ" class="form_input" type="text">
@@ -138,13 +138,14 @@
       </ul>
     </section>
     <section class="order">
-      <!-- <img class="order-img_primary" src="./images/sa2.jpg" alt="sasha"> -->
+      <img class="order-img_primary" src="./images/sa3.JPG" alt="sasha">
       <form class="order-form" action="submit">
-        <input class="order-input" type="text">
-        <input class="order-input" type="tel">
-        <input class="order-input" type="text">
-        <output for="#range"" name="level">120</output>
-        <input id="range"  type="range" min="30" max="500" >
+        <input class="order-input" required placeholder="ИМЯ" type="text">
+        <input class="order-input" required placeholder="ТЕЛЕФОН" type="tel">
+        <input class="order-input" placeholder="РЕГИОН РАЗВИТИЯ"  type="text">
+        <input class="order-input" placeholder="СРЕДНИЙ ЧЕК" type="text">
+        
+        <input id="range" class="order-range" type="range" min="30" max="500" >
         <button>ОТПРАВИТЬ</button>
       </form>
       <img class="order-img_secondary" src="./images/sa.JPG" alt="sasha">
@@ -152,7 +153,7 @@
     </section>
 <section id='reviews' class="reviews">
 <h2 class="reviews-title" >Отзывы</h2>
-  <div class="swiper mySwiper">
+  <div class="swiper mySwiper" data-aos="zoom-in-right" data-aos-delay="200">
     <button class="swiper-button-next"></button>
     <button class="swiper-button-prev"></button>
     <div class="swiper-wrapper">
