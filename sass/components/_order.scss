@@ -15,7 +15,27 @@ background-image: linear-gradient(
 background-size: cover;
 overflow: hidden;
 }
-
+.order-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.order-title{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.order-title--green{
+    display: inline-block;
+    color: #05a591;
+    animation-name: jump2;
+  
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform: translateY(20px);
+}
 .order-form{
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 width: 400px;
@@ -28,7 +48,7 @@ height: 500px;
     margin-left: auto;
     margin-right: auto;
     backdrop-filter: blur(20px);
-    animation-name: shadows;
+    // animation-name: shadows;
   
     animation: 3s linear  infinite alternate shadows;
 }
@@ -68,6 +88,7 @@ background-color: #05a591;
 .order-input:focus{
     outline:none;
     border-bottom: 1px solid white;
+    
 }
 
 .order-btn{
@@ -78,6 +99,12 @@ background-color: #05a591;
     background-color: #05a591;
     border: none;
     color: white;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.order-btn:hover{
+    transform: translateY(-1px);
+    box-shadow:  0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 .order-img_secondary{
 
@@ -109,4 +136,16 @@ box-shadow: -9px 0px 20px 5px rgba(0,0,0,0.75);
     100%{
         box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.75);
     }
+}
+
+@keyframes jump2 {
+    0%{
+        transform: translateY(0px); 
+    }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

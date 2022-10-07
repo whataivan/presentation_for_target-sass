@@ -791,6 +791,29 @@ select {
   overflow: hidden;
 }
 
+.order-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.order-title {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.order-title--green {
+  display: inline-block;
+  color: #05a591;
+  animation-name: jump2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  transform: translateY(20px);
+}
+
 .order-form {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   width: 400px;
@@ -802,7 +825,6 @@ select {
   margin-left: auto;
   margin-right: auto;
   backdrop-filter: blur(20px);
-  animation-name: shadows;
   animation: 3s linear  infinite alternate shadows;
 }
 
@@ -848,6 +870,13 @@ select {
   background-color: #05a591;
   border: none;
   color: white;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.order-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 .order-img_secondary {
@@ -880,6 +909,18 @@ select {
   }
 }
 
+@keyframes jump2 {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -891,7 +932,7 @@ select {
 }
 
 .reviews-title {
-  width: 175px;
+  margin-bottom: 20px;
   font-size: 40px;
   color: white;
   border-bottom: 2px solid white;
@@ -911,7 +952,7 @@ select {
 }
 
 .swiper-slide img {
-  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 25px -3px rgba(0, 0, 0, 0.75);
   display: block;
   background-position: center;
   background-size: cover;
