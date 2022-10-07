@@ -912,7 +912,7 @@ input[type=range] {
 .order-img_primary {
   box-shadow: 9px 0px 20px 5px rgba(0, 0, 0, 0.75);
   height: 855px;
-  width: 100px;
+  width: 150px;
 }
 
 @keyframes shadows {
