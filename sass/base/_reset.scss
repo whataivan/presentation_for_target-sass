@@ -68,3 +68,15 @@ textarea,
 select {
   font: inherit;
 }
+
+:focus::-webkit-input-placeholder {
+  display: none;
+  color: transparent;
+}
+
+input[type=range]  {
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

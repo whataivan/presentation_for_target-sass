@@ -1,147 +1,154 @@
-.order{
-    height: 850px;
-    margin: 100px ;
-    margin-top: 125px;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-// box-shadow: 0px 5px 7px 7px #212020;
-background-image: linear-gradient(
+.order {
+  height: 850px;
+  margin: 100px;
+  margin-top: 125px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  // box-shadow: 0px 5px 7px 7px #212020;
+  background-image: linear-gradient(
       to left,
       rgba(67, 67, 70, 0.4),
       rgba(47, 48, 58, 0.5)
     ),
     url("https://cdn.pixabay.com/photo/2016/11/23/17/26/building-1853941_960_720.jpg");
-background-size: cover;
-overflow: hidden;
+  background-size: cover;
+  overflow: hidden;
 }
-.order-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center; 
+.order-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.order-title{
-    color: white;
-    font-size: 35px;
-    margin-bottom: 50px;
+.order-title {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 50px;
 }
-.order-title--green{
-    display: inline-block;
-    color: #05a591;
-    animation-name: jump2;
-  
+.order-title--green {
+  display: inline-block;
+  color: #05a591;
+  animation-name: jump2;
+
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   transform: translateY(20px);
 }
-.order-form{
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
-width: 400px;
-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    // margin-right: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    backdrop-filter: blur(20px);
-    // animation-name: shadows;
-  
-    animation: 3s linear  infinite alternate shadows;
+.order-subtitle {
+  width: 350px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.order-form {
+  padding: 25px 0;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(20px);
+
+  animation: 3s linear infinite alternate shadows;
 }
 
-.order-input{
-    width: 225px;
-    height: 35px;
-    border: 1px solid #05a591;
-    border-bottom: 1px solid black;
-text-align: center;
+.order-input {
+  width: 225px;
+  height: 35px;
+  border: 1px solid #05a591;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  border: none;
+  border: 1px solid transparent;
+  // border-radius: 15px;
+  border-bottom: 1px solid #05a591;
+
+  margin-bottom: 10px;
+  // background-color: #444444;
+  background-color: transparent;
+  backdrop-filter: brightness(50%);
+  // box-shadow:  0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+.order-input::placeholder {
+  color: #05a591;
+}
+.order-range {
+  width: 250px;
+  height: 2px;
+  background-color: white;
+}
+input[type=range]::-moz-range-thumb {
+    color: aqua;
+    height: 7px;
+    background-color: rgb(122, 122, 127);
+  }
+
+.order-input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.order-text{
+    font-size: 13px;
 color: white;
-    border: none;
-    border: 1px solid transparent;
-    // border-radius: 15px;
-    border-bottom: 1px solid #05a591;
-   
-    margin-bottom: 10px;
-    // background-color: #444444;
-    background-color: transparent;
-    backdrop-filter: brightness(50%);
-    // box-shadow:  0px 0px 25px 0px rgba(0,0,0,0.75);
-}
-.order-input::placeholder{
-    color:#05a591 ;
-}
-.order-range{
-   
-width: 225px;
-background-color: #05a591;
-
-}
-:focus::-webkit-input-placeholder {
-    display: none;
-    color: transparent;
 }
 
-.order-input:focus{
-    outline:none;
-    border-bottom: 1px solid white;
-    
+.order-btn {
+  width: 250px;
+  height: 35px;
+  border-radius: 15px;
+  margin-top: 30px;
+  background-color: #05a591;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
-
-.order-btn{
-    width: 250px;
-    height: 35px;
-    border-radius: 15px;
-    margin-top: 30px;
-    background-color: #05a591;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: all 0.2s linear;
+.order-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
-.order-btn:hover{
-    transform: translateY(-1px);
-    box-shadow:  0px 0px 15px 0px rgba(0,0,0,0.75);
+.order-img_secondary {
+  box-shadow: -9px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  height: 850px;
+  width: 600px;
 }
-.order-img_secondary{
-
-box-shadow: -9px 0px 20px 5px rgba(0,0,0,0.75);
-    height: 850px;
-    width: 600px;
-    
-}
-.order-img_primary{
-    // display: none;
-    box-shadow: 9px 0px 20px 5px rgba(0,0,0,0.75);
-        height: 855px;
-        width: 200px;
-
+.order-img_primary {
+  // display: none;
+  box-shadow: 9px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  height: 855px;
+  width: 200px;
 }
 @keyframes shadows {
-    0%{
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-    }
-    25%{
-        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    }
-    50%{
-        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
-    }
-    75%{
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
-    }
-    100%{
-        box-shadow: 5px 0px 50px 0px rgba(0,0,0,0.75);
-    }
+  0% {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+  25% {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+  }
+  50% {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+  }
+  75% {
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    box-shadow: 5px 0px 50px 0px rgba(0, 0, 0, 0.75);
+  }
 }
 
 @keyframes jump2 {
-    0%{
-        transform: translateY(0px); 
-    }
+  0% {
+    transform: translateY(0px);
+  }
   50% {
     transform: translateY(-3px);
   }
