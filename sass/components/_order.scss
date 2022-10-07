@@ -71,14 +71,14 @@
   color: white;
   border: none;
   border: 1px solid transparent;
-  // border-radius: 15px;
+ 
   border-bottom: 1px solid #05a591;
 
   margin-bottom: 10px;
-  // background-color: #444444;
+  
   background-color: transparent;
   backdrop-filter: brightness(50%);
-  // box-shadow:  0px 0px 25px 0px rgba(0,0,0,0.75);
+  
 }
 .order-input::placeholder {
   color: #05a591;
@@ -88,11 +88,7 @@
   height: 2px;
   background-color: white;
 }
-// input[type=range]::-moz-range-thumb {
-//     color: aqua;
-//     height: 7px;
-//     background-color: rgb(122, 122, 127);
-//   }
+
 
 .order-input:focus {
   outline: none;
@@ -121,10 +117,10 @@ color: white;
 .order-img_secondary {
   box-shadow: -9px 0px 20px 5px rgba(0, 0, 0, 0.75);
   height: 850px;
-  width: 585px;
+  width: 540px;
 }
 .order-img_primary {
-  // display: none;
+
   box-shadow: 9px 0px 20px 5px rgba(0, 0, 0, 0.75);
   height: 855px;
   width: 150px;
