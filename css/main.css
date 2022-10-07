@@ -72,11 +72,6 @@ select {
   font: inherit;
 }
 
-:focus::-webkit-input-placeholder {
-  display: none;
-  color: transparent;
-}
-
 input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -797,7 +792,6 @@ input[type=range] {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.75);
   background-image: linear-gradient(to left, rgba(67, 67, 70, 0.4), rgba(47, 48, 58, 0.5)), url("https://cdn.pixabay.com/photo/2016/11/23/17/26/building-1853941_960_720.jpg");
   background-size: cover;
   overflow: hidden;
@@ -872,18 +866,38 @@ input[type=range] {
   color: #05a591;
 }
 
-.order-range {
-  width: 250px;
-  height: 2px;
-  background-color: white;
-}
-
 .order-input:focus {
   outline: none;
   border-bottom: 1px solid white;
 }
 
+:focus::-webkit-input-placeholder {
+  display: none;
+  color: transparent;
+}
+
+.range-wrap {
+  align-items: center;
+  display: flex;
+}
+
+.order-range {
+  margin: 0 5px;
+  width: 250px;
+  height: 2px;
+  background-color: white;
+}
+
+.range--value {
+  color: #05a591;
+}
+
+.range-current {
+  color: #05a591;
+}
+
 .order-text {
+  margin-top: 10px;
   font-size: 13px;
   color: white;
 }
@@ -892,7 +906,7 @@ input[type=range] {
   width: 250px;
   height: 35px;
   border-radius: 15px;
-  margin-top: 30px;
+  margin-top: 10px;
   background-color: #05a591;
   border: none;
   color: white;

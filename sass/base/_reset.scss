@@ -69,10 +69,7 @@ select {
   font: inherit;
 }
 
-:focus::-webkit-input-placeholder {
-  display: none;
-  color: transparent;
-}
+
 
 input[type=range]  {
   
@@ -80,3 +77,8 @@ input[type=range]  {
   -moz-appearance: none;
   appearance: none;
 }
+
+// :focus::-webkit-input-placeholder {
+//   display: none;
+//   color: transparent;
+// }
