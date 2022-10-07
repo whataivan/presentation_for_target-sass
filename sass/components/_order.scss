@@ -5,7 +5,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  // box-shadow: 0px 5px 7px 7px #212020;
+  box-shadow:  0px 0px 22px 5px rgba(0, 0, 0, 0.75);
   background-image: linear-gradient(
       to left,
       rgba(67, 67, 70, 0.4),
@@ -23,6 +23,7 @@
   align-items: center;
 }
 .order-title {
+    width: 440px;
   color: white;
   font-size: 35px;
   margin-bottom: 50px;
