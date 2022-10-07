@@ -88,11 +88,11 @@
   height: 2px;
   background-color: white;
 }
-input[type=range]::-moz-range-thumb {
-    color: aqua;
-    height: 7px;
-    background-color: rgb(122, 122, 127);
-  }
+// input[type=range]::-moz-range-thumb {
+//     color: aqua;
+//     height: 7px;
+//     background-color: rgb(122, 122, 127);
+//   }
 
 .order-input:focus {
   outline: none;
@@ -121,13 +121,13 @@ color: white;
 .order-img_secondary {
   box-shadow: -9px 0px 20px 5px rgba(0, 0, 0, 0.75);
   height: 850px;
-  width: 600px;
+  width: 550px;
 }
 .order-img_primary {
   // display: none;
   box-shadow: 9px 0px 20px 5px rgba(0, 0, 0, 0.75);
   height: 855px;
-  width: 200px;
+  width: 100px;
 }
 @keyframes shadows {
   0% {
