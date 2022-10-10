@@ -425,6 +425,7 @@ input[type=range] {
     margin-bottom: 10px;
     color: white;
     background-color: #05a591;
+    font-size: 12px;
     font-weight: 600;
   }
 }
@@ -787,8 +788,8 @@ input[type=range] {
     width: 95%;
     height: auto;
     box-shadow: 0 0 5px 2px #05a591;
-    backdrop-filter: brightness(30%);
-    -webkit-backdrop-filter: brightness(30%);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
     transition: all 0.5s linear;
     z-index: 25;
   }
