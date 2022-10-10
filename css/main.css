@@ -939,7 +939,7 @@ input[type=range] {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-image: linear-gradient(to left, rgba(67, 67, 70, 0.4), rgba(47, 48, 58, 0.5)), url("../../images/sa.JPG");
+    background-image: linear-gradient(to left, rgba(67, 67, 70, 0.4), rgba(47, 48, 58, 0.5)), url("../images/sa.JPG");
     background-size: cover;
     overflow: hidden;
   }

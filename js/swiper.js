@@ -23,7 +23,7 @@ const swiper = new Swiper(slider, {
       clickable: true,
     },
     breakpoints: {
-      345: {
+      320: {
         spaceBetween: 300,
         speed: 500,
         grabCursor: true,
@@ -57,46 +57,3 @@ const swiper = new Swiper(slider, {
 
 
 
-// const swiper = new Swiper(slider, {
-//   direction: "horizontal",
-//   loop: true,
-//   centeredSlides: true,
-//   grabCursor: true,
-//   initialSlide: 5,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   breakpoints: {
-//     320: {
-//       spaceBetween: 300,
-//       speed: 500,
-//       grabCursor: true,
-//       loop: true,
-//       slidesPerView: 1,
-//       pagination: {
-//         el: ".swiper-pagination",
-//         type: "bullets",
-//         clickable: true,
-//       },
-//     },
-
-//     768: {
-//       slidesPerView: 3,
-//       spaceBetween: 0,
-//       loop: true,
-//       slideToClickedSlide: true,
-//       centeredSlides: true,
-//       grabCursor: true,
-//     },
-
-//     1200: {
-//       slidesPerView: 3,
-//       spaceBetween: 40,
-//       slideToClickedSlide: true,
-//       grabCursor: true,
-//       loop: true,
-//     },
-//   },
-// });
