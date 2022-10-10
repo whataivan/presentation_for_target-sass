@@ -1,3 +1,64 @@
+@media screen and (min-width: 320px) { 
+  .reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+padding: 50px 0;
+    background: linear-gradient(90deg, rgb(69, 223, 210) 0%, #353131 100%);
+    box-shadow: 0px 5px 7px 7px #212020;
+}
+.reviews-title{
+    // width: 175px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    border-bottom: 3px solid white ;
+    text-align: center;
+}
+.swiper-wrapper{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+ 
+
+  .swiper-slide img {
+    box-shadow: 0px 0px 25px -3px rgba(0,0,0,0.75);
+    display: block;
+    
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 700px;
+    // margin: 0 42px;
+    
+
+  }
+  // .swiper-slide img:last-child {
+  //   margin-right: 0px;
+  // }
+
+  .swiper-button-next{
+    border: none;
+    background-color: transparent;
+  }
+.swiper-button-prev{
+    border: none;
+    background-color: transparent;
+}
+
+
+}
+
+
+//TBLET---------------------------------------
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
 }

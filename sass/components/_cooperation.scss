@@ -1,3 +1,130 @@
+@media screen and (min-width: 320px) { 
+  .cooperation {
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 1300px;
+    background-image: linear-gradient(
+      225deg,
+      #ff3cac 0%,
+      #05a591 50%,
+      #2b86c5 100%
+    );
+    // box-shadow: 2px 0px 3px 3px #212020;
+  }
+  .cooperation-title {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .cooperation_list {
+   
+    height: 1025px;
+  }
+  .cooperation_item {
+    margin-bottom: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 150px;
+    background-color: #04403c;
+    background-size: cover;
+  //   box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+    
+  }
+  
+  
+  .cooperation_item:last-child {
+    margin-bottom: 0;
+  }
+  .cooperation_item:nth-child(even) {
+    margin-left: 155px;
+    position: relative;
+    border-radius: 0 15px  15px 0;
+    
+    background-size: cover;
+  }
+  .cooperation_item:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -155px;
+    width: 150px;
+    height: 150px;
+    background-color: #04403c;
+    border-radius: 15px 0 0 15px;
+    
+  }
+  .cooperation_item:nth-child(odd) {
+    position: relative;
+    
+    border-radius: 15px 0 0 15px;
+  }
+  .cooperation_item:nth-child(odd)::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -155px;
+    width: 150px;
+    height: 150px;
+    background-color: #04403c;
+  //   border-radius: 15px 0 0 15px;
+    border-radius: 0 15px 15px 0;
+  }
+  .cooperation_icon--even {
+    fill: #9bc6aa;
+    position: absolute;
+    top: 29%;
+    right: -112px;
+    animation-name: color_switch;
+    border-radius: 15px 0 0 15px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .cooperation_icon--even:nth-child(1){
+      animation-delay: 1s;
+  }
+  .cooperation_icon--odd {
+    fill: #9bc6aa;
+    position: absolute;
+    top: 29%;
+    left: -112px;
+    animation-name: color_switch;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  .cooperation_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    
+    font-size: 17px;
+    font-weight: 700;
+   
+    
+  }
+   
+
+}
+
+
+
 //TABLET-----------------------------------------------------
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .cooperation {

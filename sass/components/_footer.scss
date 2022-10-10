@@ -1,3 +1,404 @@
+@media screen and (min-width: 320px) {
+  .footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 7px 7px #212020;
+  }
+  .top-side {
+    display: flex;
+  }
+  .footer-wrap {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to left,
+        rgba(67, 67, 70, 0.4),
+        rgba(47, 48, 58, 0.6)
+      ),
+      url("../images/footer2.jpg");
+    background-size: cover;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 52px;
+    margin-left: 20px;
+  }
+  .contacts_title {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 25px;
+  }
+  .content_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contacts_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts_tel {
+    width: 200px;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .contacts_tel:hover {
+    color: #05a591;
+  }
+  .contacts_mail {
+    margin-left: 35px;
+    width: 200px;
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .contacts_mail:hover {
+    color: #05a591;
+  }
+  .mail_icon {
+    position: absolute;
+    top: 3px;
+    left: -40px;
+    fill: #05a591;
+  }
+
+  .socials_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    margin-left: 15px;
+  }
+  .socials_item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .socials_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #05a591;
+
+    transform: scale(1);
+    transition: all 0.2s linear;
+    background-color: transparent;
+  }
+  .socials_link:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+    background-color: #393636;
+  }
+  .socials_icon {
+    fill: #05a591;
+  }
+  .questions-form_wrap {
+    width: 500px;
+  }
+  .questions-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .questions-form::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    border-left: 2px solid #05a591;
+    background: #000;
+  }
+  .questions_title {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 25px;
+  }
+  .questions_input {
+    width: 250px;
+    height: 40px;
+    color: #05a591;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: transparent;
+    -webkit-backdrop-filter: brightness(30%);
+    backdrop-filter: brightness(30%);
+    border-radius: 15px;
+    border: 2px solid #05a591;
+    animation-name: border;
+
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .questions_input--text {
+    resize: vertical;
+    width: 250px;
+    height: 100px;
+    color: #05a591;
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    background-color: transparent;
+    -webkit-backdrop-filter: brightness(30%);
+    backdrop-filter: brightness(30%);
+    border-radius: 15px;
+    border: 2px solid #05a591;
+    animation-name: border;
+
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .questions_input--text::placeholder {
+    padding: 13% 0;
+  }
+  .questions_btn {
+    cursor: pointer;
+    width: 350px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+
+    color: white;
+    background-color: #05a591;
+    font-weight: 600;
+  }
+  .footer-bottom-side {
+    position: relative;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 5px 4px #212020;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to left, #575555, rgb(50, 48, 48));
+  }
+  .bottom-side_text {
+    color: #05a591;
+    margin-right: 5px;
+  }
+  .bottom-side_button {
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #05a591;
+    color: #05a591;
+    margin-right: 5px;
+    animation-name: jump2;
+
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    margin-bottom: 1px;
+    transition: all 0.3s linear;
+  }
+  .bottom-side_button--open {
+    animation-iteration-count: 1;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.3s linear;
+  }
+  .bottom-side_span {
+    color: #05a591;
+  }
+
+  
+
+  .made-by {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #05a591;
+    // background-color: #212020;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    overflow: hidden;
+
+    opacity: 1;
+    transition: all 0.3s linear;
+  }
+  .made-by_hidden {
+    // display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0);
+  }
+  .made-by_close_btn {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  .made-by_close_btn:hover {
+    color: #05a591;
+  }
+  .made-by_title {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 13px;
+    margin-right: 17px;
+    border-bottom: 1px solid #05a591;
+    animation-name: border2;
+    // animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .content_contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .made-by_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .made-by_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .made-by_tel {
+    width: 200px;
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    margin-right: 22px;
+  }
+  .made-by_mail {
+    margin-left: 24px;
+    width: 200px;
+    position: relative;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  .made-by_mail_icon {
+    position: absolute;
+    top: 3px;
+    left: -15px;
+    fill: #05a591;
+  }
+  .made-by_tel_icon {
+    position: absolute;
+    top: 3px;
+    left: 9px;
+
+    fill: #05a591;
+  }
+
+  .made-by_socials_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .made-by_socials_item {
+    width: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+  .made-by_socials_item:last-child {
+    margin-right: 0;
+  }
+  .made-by_socials_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+
+    transform: scale(1);
+    transition: all 0.2s linear;
+    background-color: transparent;
+  }
+  .made-by_socials_link:hover {
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+
+    // background-color: #393636;
+  }
+  .made-by_socials_link:hover .made-by_socials_icon {
+    fill: white;
+    transition: all 0.2s linear;
+  }
+  .made-by_socials_icon {
+    fill: #05a591;
+    transition: all 0.2s linear;
+  }
+
+}
+
+
 //TBLET=========================================================
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer {
@@ -30,7 +431,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 70px;
+    margin-right: 52px;
     margin-left: 20px;
   }
   .contacts_title {
