@@ -788,7 +788,7 @@ input[type=range] {
     height: auto;
     box-shadow: 0 0 5px 2px #05a591;
     backdrop-filter: brightness(30%);
-    -webkit-backdrop-filter: rightness(30%);
+    -webkit-backdrop-filter: brightness(30%);
     transition: all 0.5s linear;
     z-index: 25;
   }
