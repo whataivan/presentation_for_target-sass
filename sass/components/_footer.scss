@@ -1,6 +1,7 @@
 @media screen and (min-width: 320px) {
   .footer {
     width: 100vw;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,30 +12,33 @@
     display: flex;
   }
   .footer-wrap {
+    
     width: 100%;
-    height: 600px;
-    display: flex;
+    height: 100%;
+    // display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(
         to left,
-        rgba(67, 67, 70, 0.4),
-        rgba(47, 48, 58, 0.6)
+        rgba(67, 67, 70, 0.7),
+        rgba(47, 48, 58, 0.9)
       ),
       url("../images/footer2.jpg");
     background-size: cover;
   }
   .footer-content {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 52px;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
   }
   .contacts_title {
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     color: white;
     margin-bottom: 25px;
   }
@@ -56,9 +60,9 @@
     justify-content: center;
   }
   .contacts_tel {
-    width: 200px;
+    width: 220px;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -68,10 +72,11 @@
     color: #05a591;
   }
   .contacts_mail {
+    position: relative;
     margin-left: 35px;
     width: 200px;
     position: relative;
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -82,9 +87,18 @@
   }
   .mail_icon {
     position: absolute;
+    width: 20px;
+    height: 20px;
+    position: absolute;
     top: 3px;
-    left: -40px;
+    left: -20px;
     fill: #05a591;
+  }
+  .tel_icon{
+    width: 20px;
+    height: 20px;
+    fill: #05a591;
+
   }
 
   .socials_list {
@@ -128,11 +142,13 @@
     width: 500px;
   }
   .questions-form {
+    
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
   }
   .questions-form::after {
     content: "";
@@ -400,7 +416,7 @@
 
 
 //TBLET=========================================================
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
     width: 100vw;
     display: flex;
