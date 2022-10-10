@@ -744,7 +744,8 @@ input[type=range] {
 @media screen and (min-width: 320px) {
   .about {
     position: relative;
-    height: 1250px;
+    height: auto;
+    padding: 50px 5px;
     width: 100%;
     overflow: visible;
     display: -webkit-box;
@@ -763,7 +764,7 @@ input[type=range] {
   }
   .about-title {
     color: white;
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 60px;
     padding: 10px 20px;
     backdrop-filter: brightness(50%);
@@ -777,15 +778,15 @@ input[type=range] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 20px;
   }
   .about_item {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 700px;
-    height: 220px;
+    width: 95%;
+    height: auto;
     box-shadow: 0 0 5px 2px #05a591;
     backdrop-filter: brightness(30%);
     -webkit-backdrop-filter: rightness(30%);
@@ -800,7 +801,7 @@ input[type=range] {
   }
   .about_text {
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 15px;
     padding: 15px;
     text-align: center;
   }
