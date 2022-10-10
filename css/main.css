@@ -1304,7 +1304,7 @@ input[type=range] {
   }
   .order-title--green {
     display: inline-block;
-    color: #05a591;
+    color: white;
     animation-name: jump2;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -1434,7 +1434,7 @@ input[type=range] {
   }
   .order-title--green {
     display: inline-block;
-    color: #05a591;
+    color: white;
     animation-name: jump2;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -1567,7 +1567,7 @@ input[type=range] {
   }
   .order-title--green {
     display: inline-block;
-    color: #05a591;
+    color: white;
     animation-name: jump2;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
