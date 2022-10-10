@@ -120,7 +120,6 @@ input[type=range] {
 /* DESKPOT----------------------------------------------------------------------------------------- */
 @media (min-width: 1200px) {
   .container {
-    width: 100vw;
     overflow: hidden;
     overflow-y: hidden;
     /*для вертикального*/
@@ -448,6 +447,7 @@ input[type=range] {
   }
   .hero-info {
     padding: 15px;
+    margin-top: 20px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -583,7 +583,6 @@ input[type=range] {
     align-items: center;
     justify-content: space-evenly;
     overflow: hidden;
-    padding: 0 50px;
     background-image: url("../images/office.jpg");
     /* fallback */
     background-size: cover;
@@ -1341,7 +1340,6 @@ input[type=range] {
     text-align: center;
     color: white;
     border: none;
-    border: 1px solid transparent;
     border-bottom: 1px solid #05a591;
     margin-bottom: 10px;
     background-color: transparent;
