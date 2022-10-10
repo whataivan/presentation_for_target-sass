@@ -8,7 +8,7 @@
   flex-direction: column;
     justify-content: space-evenly;
   overflow: hidden;
-    padding: 0 50px;
+    padding: 15px 10px;
     background-image: url("../images/office.jpg"); /* fallback */
   
     background-size: cover;
@@ -26,16 +26,16 @@
   }
   .info_title {
     color: white;
-    font-size: 50px;
-    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: center;
     flex-shrink: 0;
   }
   .info_text {
-    width: 325px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 50px;
-    margin-top: 25px;
+    font-size: 30px;
+    margin-top: 15px;
     padding-top: 10px;
     border-top: 3px solid #05a591;
   
@@ -45,28 +45,12 @@
   
  
   .hero_link{
-    position: absolute;
+    display: none;
     
-    left: 48%;
-    bottom: 0px;
-    
-  width: 50px;
-  height: 50px;
-    animation-name: jump;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    cursor: pointer;
-    z-index: 15;
   }
   .hero_icon {
-    position: absolute;
-    left: 48%;
-    bottom: 0px;
-    rotate: (180deg);
-  
-    animation-name: jump;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    display: none;
+    
   }
   .hero-form {
     position: relative;
@@ -74,8 +58,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 500px;
+    width: 95%;
+    height: 350px;
   padding: 20px;
     border-radius: 5px;
     backdrop-filter: blur(30px);
@@ -112,6 +96,7 @@
   }
   .form_title{
     color: white;
+    text-align: center;
     margin-bottom: 10px;
   }
   .form_text{
@@ -119,8 +104,8 @@
     border-top: 1px solid #05a591;
     color: #05a591;
     padding-top: 10px;
-    width: 300px;
-    margin-bottom: 75px;
+    // width: 300px;
+    margin-bottom: 25px;
     
   }
   .form_input {
@@ -128,17 +113,17 @@
     border: 2px solid #05a591;
     border-bottom: 1px solid #05a591;
     width: 250px;
-    height: 40px;
+    height: 50px;
     color: #05a591;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
     background-color: transparent;
     // backdrop-filter: blur(15px);
     border-radius: 15px;
   }
   .form_input:nth-last-child(2){
-    margin-bottom: 75px;
+    margin-bottom: 35px;
   }
   .form_input:focus {
     color: #05a591;
@@ -146,8 +131,8 @@
   }
   .form_btn {
     cursor: pointer;
-    width: 300px;
-    height: 45px;
+    width: 100%;
+    height: 50px;
     border-radius: 30px;
       border: none;
     margin-bottom: 10px;

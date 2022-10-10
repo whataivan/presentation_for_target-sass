@@ -5,28 +5,28 @@
     z-index: 100;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: 100vw;
     height: 50px;
     background-color: #393738;
     border-bottom: 1px solid #05a591;
     background: linear-gradient(to right, #2b292a, black);
-    // box-shadow: 0px 2px 3px 2px #dcd7d7;
+   
   }
   .header-nav {
-      width: 600px;
+      // width: 600px;
       height: 65px;
       align-items: center;
     margin-left: 25px;
     
   }
   .nav_list {
-      width: 350px;
+      width: 100%;
       height: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   }
   .nav_item {
       
@@ -37,6 +37,7 @@
     color:  #05a591 ;
     text-decoration: none;
     transition: color 0.3s linear;
+    font-size: 12px;
   }
   .nav_link:hover {
       cursor: pointer;
@@ -45,25 +46,12 @@
       
   }
   .header_tel{
-    margin-right: 25px;
-    width: 200px;
-    position: relative;
-    font-size: 20px;
-  text-decoration: none;
-  color: white;
-  text-align:  center;
-  transition: all 0.3s linear;
+    display: none;
+    
   
   }
-  .header_tel:hover{
-    color: #05a591 ;
-  }
-  .tel_icon{
-    position: absolute;
-    top: 3px;
-    left: -20px;
-    fill: #05a591;
-  }
+ 
+  
 }
 
 //TBLT--------------------------------------------------------------------
