@@ -758,9 +758,9 @@ input[type=range] {
     background: -webkit-gradient(linear, left top, right top, from(#c2c6bc), to(aliceblue));
     background: -o-linear-gradient(left, #c2c6bc, aliceblue);
     background: linear-gradient(to right, #c2c6bc, aliceblue);
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(67, 67, 70, 0.7)), to(rgba(47, 48, 58, 0.5))), url("../images/about_main.jpg");
-    background-image: -o-linear-gradient(right, rgba(67, 67, 70, 0.7), rgba(47, 48, 58, 0.5)), url("../images/about_main.jpg");
-    background-image: linear-gradient(to left, rgba(67, 67, 70, 0.7), rgba(47, 48, 58, 0.5)), url("../images/about_main.jpg");
+    background-image: -webkit-gradient(linear, right top, left top, rgba(67, 67, 70, 0.8), rgba(47, 48, 58, 0.9)), url("../images/about_main.jpg");
+    background-image: -o-linear-gradient(right, rgba(67, 67, 70, 0.8), rgba(47, 48, 58, 0.9)), url("../images/about_main.jpg");
+    background-image: linear-gradient(to left, rgba(67, 67, 70, 0.8), rgba(47, 48, 58, 0.9)), url("../images/about_main.jpg");
     background-size: cover;
   }
   .about-title {
@@ -1346,6 +1346,7 @@ input[type=range] {
     margin-bottom: 10px;
     background-color: transparent;
     backdrop-filter: brightness(50%);
+    font-size: 13px;
   }
   .order-input::placeholder {
     color: #05a591;
@@ -1714,7 +1715,6 @@ input[type=range] {
     margin-bottom: 20px;
     font-size: 25px;
     color: white;
-    border-bottom: 3px solid white;
     text-align: center;
   }
   .swiper-wrapper {
