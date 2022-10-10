@@ -1,8 +1,10 @@
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .about {
     position: relative;
-    height: 1150px;
-
+    height: 1250px;
+width: 100%;
+// margin: 2px;
+overflow: visible;
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -14,13 +16,12 @@
             align-items: center;
     
             justify-content: center;
-    -webkit-box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
-            box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
-    margin: 100px;
+    
+    
     background: -webkit-gradient(linear, left top, right top, from(#c2c6bc), to(aliceblue));
     background: -o-linear-gradient(left, #c2c6bc, aliceblue);
     background: linear-gradient(to right, #c2c6bc, aliceblue);
-    overflow: visible;
+    
 
     background-image: -webkit-gradient(
         linear,
@@ -45,28 +46,7 @@
       url("../images/about_main.jpg");
     background-size: cover;
   }
-  .about::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    width: 250px;
-    height: 250px;
-    border-top: 2px solid #05a591;
-    border-right: 2px solid #05a591;
-  }
-  .about::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -15px;
-    left: -15px;
-    width: 250px;
-    height: 250px;
-    border-bottom: 2px solid #05a591;
-    border-left: 2px solid #05a591;
-  }
+  
 
   .about-title {
     color: white;
@@ -95,18 +75,18 @@
 
     align-items: center;
     justify-content: center;
-    width: 800px;
-    height: 200px;
+    width: 700px;
+    height: 220px;
     box-shadow: 0 0 5px 2px #05a591;
     backdrop-filter: brightness(30%);
     -webkit-backdrop-filter: rightness(30%);
-    // border: 1px solid #665252;
+    
     transition: all 0.5s linear;
     z-index: 25;
   }
   .about_item:hover {
     transform: scale(1.03);
-    // box-shadow: 0 0 5px 2px #dfd5d5;
+    
     animation-name: blur;
 
     animation-duration: 5s;

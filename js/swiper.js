@@ -22,6 +22,37 @@ const swiper = new Swiper(slider, {
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      345: {
+        spaceBetween: 300,
+        speed: 500,
+        grabCursor: true,
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true,
+        },
+      },
+  
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 0,
+        loop: true,
+        slideToClickedSlide: true,
+        centeredSlides: true,
+        grabCursor: true,
+      },
+  
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 40,
+        slideToClickedSlide: true,
+        grabCursor: true,
+        loop: true,
+      },
+    },
   });
 
 
