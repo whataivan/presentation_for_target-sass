@@ -34,13 +34,13 @@ headForm.addEventListener('submit', sendEmailHead)
 
   function sendEmailFooter(e) {
     location.href='../successfulRequest.html'
-    console.log('2');
+    
   
    
    
     emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', footerForm, 'ZzNvGgpBwsBSFGEzB')
       .then((result) => {
-         console.log('ok');
+        location.href='../successfulRequest.html'
       }, (error) => {
           console.log(error.text);
       });
