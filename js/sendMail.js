@@ -12,8 +12,8 @@ headForm.addEventListener('submit', sendEmailHead)
    
   
     emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', form, 'ZzNvGgpBwsBSFGEzB')
-      .then((result) => {
-         
+      .then(() => {
+        location.href='../successfulRequest.html'
          form.reset()
       }, (error) => {
           console.log(error.text);
@@ -26,14 +26,14 @@ headForm.addEventListener('submit', sendEmailHead)
  
     emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', headForm, 'ZzNvGgpBwsBSFGEzB')
       .then((result) => {
-         console.log('ok');
+        location.href='../successfulRequest.html'
       }, (error) => {
           console.log(error.text);
       });
   };
 
   function sendEmailFooter(e) {
-    e.preventDefault();
+    location.href='../successfulRequest.html'
     console.log('2');
   
    
