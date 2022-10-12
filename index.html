@@ -55,8 +55,8 @@
       <form class="hero-form" action="submit" data-aos="fade-down" data-aos-delay="200">
         <h3 class="form_title">КОНСУЛЬТАЦИЯ БЕСПЛАТНО</h3>
         <p class="form_text">Бесплатно проконсультирую Вас по вопросам рекламы Вашего бизнеса</p>
-        <input required placeholder="ИМЯ" class="form_input" type="text">
-        <input required placeholder="ТЕЛЕФОН" class="form_input" type="tel" pattern="+[0-9]{10}">
+        <input required placeholder="ИМЯ" name="name" class="form_input" type="text">
+        <input required placeholder="ТЕЛЕФОН" name="tel" class="form_input" type="tel" pattern="+[0-9]{10}">
         <button class="form_btn" type="submit">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
       </form>
     </section>
@@ -134,24 +134,42 @@
         </li>
       </ul>
     </section>
+    <section id="cases" class="cases">
+      <h3 class="cases-head-title">Кейсы</h3>
+      <ul class="cases-list">
+       
+        <li class="cases-item">
+          <h4 class="cases_title">Легализация перебывания в Польше </h4>
+          <h5 class="cases_subtitle">Рекламная кампания была нацелена на привлечение клиентов, которым нужна карта побыта</h5>
+        <p class="cases_answers">
+          целевых обращений <span class="cases_answers--count">1040</span></p>
+        <p class="cases_answers"><span class="cases_answers--count"></span></p>
+        <p class="cases_answers"><span class="cases_answers--count"></span></p>
+        </li>
+      </ul>
+    </section>
     <section class="order">
-      <img class="order-img_primary" data-aos="fade-right"  src="./images/sa3.jpg" alt="sasha">
-      <div class="order-content"  >
+      <img class="order-img_primary" data-aos="fade-right" src="./images/sa3.jpg" alt="sasha">
+      <div class="order-content">
         <h3 class="order-title" data-aos="fade-down"> Есть конкретная цель<span class="order-title--green">?</span></h3>
         <form class="order-form" action="submit">
           <h3 class="order-subtitle">Заполните форму, укажите желаемое количество клиенетов и я предложу вариант
             достижения Вашей цели</h3>
-          <input class="order-input" required placeholder="ИМЯ" type="text">
-          <input class="order-input" required placeholder="ТЕЛЕФОН" type="tel">
-          <input class="order-input" placeholder="РЕГИОН ПРОДВИЖЕНИЯ" type="text">
-          <input class="order-input" placeholder="СРЕДНИЙ ЧЕК" type="text">
+          <input class="order-input" name="name" required placeholder="ИМЯ" type="text">
+          <input class="order-input" name="tel" required placeholder="ТЕЛЕФОН" type="tel">
+          <input class="order-input" name="region" placeholder="РЕГИОН ПРОДВИЖЕНИЯ" type="text">
+          <input class="order-input" name="chek" placeholder="СРЕДНИЙ ЧЕК" type="text">
           <p class="order-text">Сколько клиентов Вам необходимо?</p>
-          <div class="range-wrap"><p class="range--value">30</p><input value="120" id="range" class="order-range" type="range" min="30" max="500"><p class="range--value">500</p></div>
-            <p class="range-current">120</p>
-          <button class="order-btn">ОТПРАВИТЬ</button>
+          <div class="range-wrap">
+            <p class="range--value">30</p><input value="120" name="range" id="range" class="order-range" type="range"
+              min="30" max="500">
+            <p class="range--value">500</p>
+          </div>
+          <p class="range-current">120</p>
+          <button class="order-btn" type="submit">ОТПРАВИТЬ</button>
         </form>
       </div>
-      <img class="order-img_secondary" data-aos="fade-left"  src="./images/sa.JPG" alt="sasha">
+      <img class="order-img_secondary" data-aos="fade-left" src="./images/sa.JPG" alt="sasha">
 
     </section>
     <section id='reviews' class="reviews">
@@ -244,10 +262,11 @@
         <div class="questions-form_wrap">
           <form class="questions-form" action="submit">
             <h3 class="questions_title">ЕСТЬ ВОПРОСЫ? - ПИШИ!</h3>
-            <input required placeholder="ИМЯ" class="questions_input" type="text">
-            <input required placeholder="ТЕЛЕФОН" class="questions_input" type="tel" pattern="+[0-9]{10}">
+            <input required placeholder="ИМЯ" name="name" class="questions_input" type="text">
+            <input required placeholder="ТЕЛЕФОН" name="tel" class="questions_input" type="tel" pattern="+[0-9]{10}">
 
-            <textarea required placeholder="TEКСТ" class="questions_input--text" cols="30" rows="10"></textarea>
+            <textarea required placeholder="TEКСТ" name="message" class="questions_input--text" cols="30"
+              rows="10"></textarea>
             <button class="questions_btn" type="submit">ОТПРАВИТЬ</button>
 
           </form>
@@ -284,13 +303,7 @@
                 </svg>
               </a>
             </li>
-            <!-- <li class="made-by_socials_item"><a class="made-by_socials_link" target="_blank"
-                  href="https://www.instagram.com/whataivan/">
-                  <svg class="made-by_socials_icon" width="20" height="20">
-                    <use href="./images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li> -->
+            
 
             <li class="made-by_socials_item"><a class="made-by_socials_link" target="_blank"
                 href="https://github.com/Jasper935">
@@ -317,10 +330,19 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/swiper.js"></script>
   <script src="./js/orderForm.js"></script>
+  <script src="./js/openSuccessPage.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("YOUR_PUBLIC_KEY");
+    })();
+  </script>
+  <script src="./js/sendMail.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+.success{
+    font-family: Montserrat ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/office.jpg");
+    background-size: cover;
+}
+.success-wrap{
+padding: 25px;
+flex-direction: column;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 30px;
+
+}
+.success-title{
+    color: white;
+    font-size: 45px;
+    text-align: center;
+
+}
+.success-text{
+    text-align: center;
+    font-size: 25px;
+    color: #05a591;
+    margin-bottom: 25px;
+}
+.success-link{
+    color: white;
+    background-color: #05a591;
+    font-size: 20px; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 10px;
+}
