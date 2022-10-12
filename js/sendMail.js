@@ -11,7 +11,7 @@ const formData = {}
 
 function sendEmail(e) {
   e.preventDefault();
-  emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', form, 'ZzNvGgpBwsBSFGEzB')
+  emailjs.sendForm('service_1h4x5fd', 'template_s6fulkd', form, 'oyCLGnfUu7C7xe4to')
     .then(() => {
       location.href = './successfulRequest.html'
       form.reset()
@@ -22,7 +22,7 @@ function sendEmail(e) {
 
 function sendEmailHead(e) {
   e.preventDefault();
-  emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', headForm, 'ZzNvGgpBwsBSFGEzB')
+  emailjs.sendForm('service_1h4x5fd', 'ttemplate_s6fulkd', headForm, 'oyCLGnfUu7C7xe4to')
     .then((result) => {
       headForm.reset()
       location.href = './successfulRequest.html'
@@ -34,7 +34,7 @@ function sendEmailHead(e) {
 function sendEmailFooter(e) {
   e.preventDefault();
 
-  emailjs.sendForm('service_1x6tfem', 'template_t43ncvi', footerForm, 'ZzNvGgpBwsBSFGEzB')
+  emailjs.sendForm('service_1h4x5fd', 'template_s6fulkd', footerForm, 'oyCLGnfUu7C7xe4to')
     .then((result) => {
       footerForm.reset()
       location.href = './successfulRequest.html'
