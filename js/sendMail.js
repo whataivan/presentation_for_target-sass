@@ -22,7 +22,7 @@ function sendEmail(e) {
 
 function sendEmailHead(e) {
   e.preventDefault();
-  emailjs.sendForm('service_1h4x5fd', 'ttemplate_s6fulkd', headForm, 'oyCLGnfUu7C7xe4to')
+  emailjs.sendForm('service_1h4x5fd', 'template_s6fulkd', headForm, 'oyCLGnfUu7C7xe4to')
     .then((result) => {
       headForm.reset()
       location.href = './successfulRequest.html'
