@@ -1316,6 +1316,7 @@ input[type=range] {
 
 .cases-item::after {
   position: absolute;
+  opacity: 0.9;
   right: -315px;
   top: 0;
   width: 300px;

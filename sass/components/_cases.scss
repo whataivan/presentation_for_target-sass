@@ -42,6 +42,7 @@ box-shadow: 0 0 5px 2px #a8c3c3;
 }
 .cases-item::after{
     position: absolute;
+    opacity: 0.9;
     right: -315px;
     top: 0;
     width: 300px;
