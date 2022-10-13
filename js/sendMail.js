@@ -1,4 +1,4 @@
-// import emailjs from '@emailjs/browser';
+
 const form = document.querySelector('.hero-form')
 const headForm = document.querySelector('.order-form')
 const footerForm = document.querySelector('.questions-form')
