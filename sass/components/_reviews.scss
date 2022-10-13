@@ -6,7 +6,7 @@
     justify-content: center;
     padding: 50px 0;
     background: linear-gradient(90deg, rgb(69, 223, 210) 0%, #353131 100%);
-    box-shadow: 0px 5px 7px 7px #212020;
+    
   }
   .reviews-title {
     margin-bottom: 20px;
@@ -37,11 +37,9 @@
     background-size: cover;
     width: 275px;
     height: 550px;
-    // margin: 0 42px;
+   
   }
-  // .swiper-slide img:last-child {
-  //   margin-right: 0px;
-  // }
+  
 
   .swiper-button-next {
     border: none;
@@ -64,7 +62,7 @@
     background: linear-gradient(90deg, rgb(69, 223, 210) 0%, #353131 100%);
     box-shadow: 0px 5px 7px 7px #212020;
   }
-  .reviews-title {
+  .reviews-title{
    
     margin-bottom: 20px;
     font-size: 40px;
@@ -91,11 +89,9 @@
     background-size: cover;
     width: 350px;
     height: 700px;
-    // margin: 0 42px;
+    
   }
-  // .swiper-slide img:last-child {
-  //   margin-right: 0px;
-  // }
+  
 
   .swiper-button-next {
     border: none;
