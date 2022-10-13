@@ -1311,7 +1311,6 @@ input[type=range] {
   margin-bottom: 50px;
   box-shadow: 0 0 5px 2px #a8c3c3;
   background-image: linear-gradient(to left, #264e45, #101112);
-  box-shadow: inset 0 0 15px 4px #126060;
   border-bottom: 2px solid white;
 }
 
@@ -1324,7 +1323,6 @@ input[type=range] {
   width: 300px;
   height: 100%;
   box-shadow: 0 0 5px 2px #a8c3c3;
-  box-shadow: inset 0 0 15px 8px #126060;
   border-bottom: 2px solid white;
   background-size: cover;
   background-image: url("https://cdn.pixabay.com/photo/2015/05/31/15/00/flag-792067_960_720.jpg");
@@ -1355,7 +1353,7 @@ input[type=range] {
 }
 
 .cases-item:nth-child(8):after {
-  background-image: url("https://cdn.pixabay.com/photo/2019/07/12/20/46/car-4333567_960_720.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2020/03/24/20/59/car-4965498_960_720.jpg");
 }
 
 .cases_title {
