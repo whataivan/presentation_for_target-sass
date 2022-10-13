@@ -1308,6 +1308,7 @@ input[type=range] {
   .cases-item {
     position: relative;
     padding: 15px;
+    padding-right: 5px;
     width: 300px;
     margin-bottom: 50px;
     box-shadow: 0 0 5px 2px #a8c3c3;
